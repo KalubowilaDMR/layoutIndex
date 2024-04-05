@@ -1,0 +1,31 @@
+.column1 {
+    width : 18% 
+}
+
+.column2 {
+    width : 17% 
+}
+
+.column3 {
+    width : 28% 
+}
+
+.column4 {
+    width : 10% 
+}
+
+.column5 {
+    width : 8% 
+}
+
+.column6 {
+    width : 19% 
+}
+
+.auto-size {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
