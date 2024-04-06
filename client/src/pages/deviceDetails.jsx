@@ -31,7 +31,7 @@ const DeviceDetails = () => {
   return (
     <>
         <Container className="pt-5">
-            <Button as={Link} to="/" variant="primary" className="mb-4">Go Back</Button>
+            <Button as={Link} to="/" variant="danger" className="mb-4">Go Back</Button>
             <h2 className="fw-bold text-center mb-5">Device Details</h2>
             <Form>
                 <Form.Group className="mb-3">

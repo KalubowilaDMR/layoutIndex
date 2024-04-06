@@ -149,14 +149,14 @@ const Location = () => {
                     <td className="d-block">
                       {location?.devices.length} devices
                       <div>
-                        <Button size="sm" onClick={() => handleViewDeviceModelVisible(location?.devices)}>View all</Button>
+                        <Button size="sm" variant="info" onClick={() => handleViewDeviceModelVisible(location?.devices)}>View all</Button>
                       </div>
                     </td>
                     <td>
                       <div className="d-flex gap-2">
-                        <Button size="sm" value={location?._id} onClick={() => handleAddDeviceModelVisible(location)}>Add Device</Button>
-                        <Button size="sm" value={location?._id} onClick={() => handleUpdateModelVisible(location)}>Update</Button>
-                        <Button size="sm" value={location?._id} onClick={() => deleteLocation(location?._id)}>Delete</Button>
+                        <Button size="sm" variant="primary" value={location?._id} onClick={() => handleAddDeviceModelVisible(location)}>Add Device</Button>
+                        <Button size="sm" variant="success" value={location?._id} onClick={() => handleUpdateModelVisible(location)}>Update</Button>
+                        <Button size="sm" variant="danger" value={location?._id} onClick={() => deleteLocation(location?._id)}>Delete</Button>
                       </div>
                     </td>                
                   </tr>

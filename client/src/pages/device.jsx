@@ -94,9 +94,9 @@ const Device = () => {
                     <td>{device?.status}</td>
                     <td>
                       <div className="d-flex gap-2">
-                        <Button value={device?._id} as={Link} to={device? `/device-details/${device._id}` : '/'}>View</Button>
-                        <Button value={device?._id} onClick={() => handleUpdateModelVisible(device)}>Update</Button>
-                        <Button value={device?._id} onClick={() => deleteDevice(device)}>Delete</Button>
+                        <Button value={device?._id} variant="primary" as={Link} to={device? `/device-details/${device._id}` : '/'}>View</Button>
+                        <Button value={device?._id} variant="success" onClick={() => handleUpdateModelVisible(device)}>Update</Button>
+                        <Button value={device?._id} variant="delete" onClick={() => deleteDevice(device)}>Delete</Button>
                       </div>
                     </td>                
                   </tr>
